@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-rows:250px 250px 250px 130px;
+            grid-template-columns: repeat(14,1fr); 
+            column-gap: 10px;
+            row-gap: 5px;
+        }
+       
+        #box1{
+            grid-column:1/9 ;
+            grid-row: 1/2;
+            background-image: url(../IMAGES/manwater.avif);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+      
+        #box2{
+            grid-column:9/13;
+            grid-row: 1/2; 
+            background-image: url(../IMAGES/mountain.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+      
+        #box3{
+            grid-column:13/15;
+            grid-row: 1/5;
+            color: white;
+            background-color: black;     
+        }
+       
+        #box4 {
+            grid-column: 1/4;
+            grid-row: 2/3;
+            background-image: url(../IMAGES/image1.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease; 
+        }
+        #box5{
+            grid-column:4/10 ;
+            grid-row: 2/3;
+            background-image: url(../IMAGES/nature.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        
+        #box6{
+            grid-column:10/13 ;
+            grid-row: 2/3;
+            background-image: url(../IMAGES/image8.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+       
+        #box7{
+            grid-column:1/7 ;
+            grid-row: 3/4;
+            background-image: url(../IMAGES/girlsmile.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+       
+        #box8{
+            grid-column:7/13 ;
+            grid-row: 3/4;
+            background-image: url(../IMAGES/littelegirl.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+      
+        #box9{
+            grid-column:1/5 ;
+            grid-row: 4/5;
+            background-image: url(../IMAGES/footer1.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+       
+        #box10{
+            grid-column:5/9;
+            grid-row: 4/5;
+            background-image: url(../IMAGES/footer2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+      
+        #box11{
+            grid-column:9/13 ;
+            grid-row: 4/5;
+            background-image: url(../IMAGES/footer3.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+       
+        .heading{
+           
+            display: flex;
+            justify-content: end;
+            padding-right: 10px;
+        }
+        .menu{
+            
+            display: flex;
+            justify-content: end;
+            line-height: 25px;
+            font-size: 20px;
+            /* padding: 5px; */
+            padding-right: 10px;
+            
+        }
+        ul li{
+            list-style-type: none;
+            padding-bottom: 10px;
+            text-align: right;
+        }
+        .icon{
+            font-size: 20px;
+            display: flex;
+            justify-content: end;
+            column-gap: 10px;
+           padding: 10px;
+        }  
+        @media (max-width:768px)
+        {
+            .container{
+                grid-template-rows: 100px 250px 250px 250px 130px;
+                grid-template-columns: repeat(12,1fr);   
+            }
+            #box3{
+                grid-column:1/13;
+                grid-row: 1/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .heading{
+                display: inline-block;
+                padding-right: 10px;
+            }
+            .menu{ 
+                 display: inline-block; 
+            }
+            ul li{
+                display: inline-block;
+                padding: 5px 15px;
+            }
+            .icon{
+                font-size: 20px;
+                display: inline-block;
+                justify-content: end;  
+            } 
+            .icon i{
+                padding: 10px;
+                font-size: 20px;
+            } 
+            #box1{
+                grid-column:1/9 ;
+                grid-row: 2/3;
+            
+            }
+            #box2{
+                grid-column:9/13;
+                grid-row: 2/3; 
+                
+            }
+            #box4 {
+                grid-column: 1/4;
+                grid-row: 3/4;
+                
+            }
+            #box5{
+                grid-column:4/10 ;
+                grid-row: 3/4;
+            }
+            
+            #box6{
+                grid-column:10/13 ;
+                grid-row: 3/4;
+            }
+        
+            #box7{
+                grid-column:1/7 ;
+                grid-row: 4/5; 
+            }
+            #box8{
+                grid-column:7/13 ;
+                grid-row: 4/5;  
+            }
+            #box9{
+                grid-column:1/5 ;
+                grid-row: 5/6; 
+            }
+            #box10{
+                grid-column:5/9;
+                grid-row: 5/6;
+            }
+            #box11{
+                grid-column:9/13 ;
+                grid-row: 5/6;    
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item" id="box1"></div>
+            <div class="item" id="box2"></div>
+            <div class="item" id="box3">
+                <div class="heading">
+                    <h1>Shutter</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li style="color: brown;">Home</li>
+                        <li>Photos</li>
+                        <li>Bio</li>
+                        <li>Block</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="icon">
+                   
+                        <i class="fa-brands fa-instagram"
+                            style="color:white; "></i>
+    
+                        <i class="fa-brands fa-facebook-f"
+                            style="color: white;"></i>
+                    
+                        <i class="fa-brands fa-twitter"
+                            style="color:white;"></i>
+                </div>
+
+            </div>
+            <div class="item" id="box4"></div>
+            <div class="item" id="box5"></div>
+            <div class="item" id="box6"></div>
+            <div class="item" id="box7"></div>
+            <div class="item" id="box8"></div>
+            <div class="item" id="box9"></div>
+            <div class="item" id="box10"></div>
+            <div class="item" id="box11"></div>
+        </div>
+    </body>
+</html>

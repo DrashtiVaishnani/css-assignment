@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            margin: auto 0px;
+        }
+        .back1{
+            height: 768px;
+            width: 50%;
+            position: relative;
+            background-image: url(../IMAGES/Background.png);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+            flex-direction: column; 
+        }
+        .back2{
+            height: 768px;
+            width: 50%;
+            background-image: url(../IMAGES/Put\ Your\ Image.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;  
+        }
+        .icon{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            position: absolute;
+            top: 210px;
+            left: 48%;
+            height: 450px;
+        }
+        h1{
+            font-size: 36px;
+            letter-spacing: 4px;
+            color: #f4f5f9;
+            font-weight: 700;
+            font-family: "Source Sans 3", sans-serif;
+            margin-right: 50px;
+        }
+        h6{
+            width: 587px;
+            height: auto;
+            font-size: 18px;
+            line-height: 29px;
+            color: #e74c3c;
+            font-weight: 600;
+            font-family: "Open Sans";
+            text-align: end;
+        }
+        p{
+            width: 587px;
+            height: 74px;
+            font-size: 14px;
+            line-height: 29px;
+            color: #999999;
+            font-weight: 400;
+            font-family: "Source Sans 3", sans-serif;
+            text-align: right;
+           
+        }
+        .part{
+            width: auto;
+            height: auto;
+           margin-right: 50px;
+           /* border: 2px solid blue; */
+        }
+        .border{
+            width:6px;
+            height: 36px;
+            background-color: #e74c3c;
+        }
+        .circle1 {
+            width: 74px;
+            height: 74px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(140, 140, 140);
+            border-radius: 50%;
+        }
+
+        .circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon2 {
+            font-size: 35px;
+            color: #e74c3c;
+        }
+        .slide{
+            width: 1px;
+            height: 34px;
+            background-color: #45576e;
+            border: 1px solid #e74c3c;
+        }
+        .slide2{
+            width: 1px;
+            height: 34px;
+            background-color: #45576e;
+            border: 1px solid #505050;
+        }
+        .slide_icon{
+            display: flex;
+            flex-direction: column  ;
+            justify-content: space-around;
+            align-items: start;
+            height: 180px;
+            width: 100%;
+            position: absolute;
+            left: 20px;
+        }           
+        @media (max-width:1000px){
+            .icon{
+                left: 46%;
+             }
+             h1{
+                font-size: 25px;
+            }
+            .part{
+                width: auto;
+                margin-right: 30px;
+            }
+
+        }
+    </style>
+    </head>
+    <body>
+       
+        <div class="back1">
+            <div class="slide_icon">
+                <div class="slide2"></div>
+                <div class="slide"></div>
+                <div class="slide2"></div>
+             </div>
+           
+            <h1 style="display: flex;justify-content: center;align-items: center;gap: 15px;">Our Services
+                <div class="border"></div>
+            </h1>
+
+            <div class="part">  
+                <h6>WEB DESIGN</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Omnis totam expedita quaerat dolorem iure, provident placeat
+                    tempore vel? Eaque, quis!</p>
+            </div>
+            <div class="part">
+                <h6>PRINT DESIGN</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    labore eaque, illum praesentium consequuntur in ea minus
+                    ullam unde dignissimos!</p>
+            </div>
+            <div class="part">
+                <h6>PHOTOGRAPHY</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                    illo ut vel aut possimus harum quas corporis aspernatur
+                    obcaecati vitae?</p>
+            </div>
+            
+        </div>
+        <div class="back2">
+            <div class="icon">
+                <div class="circle1">
+                    <div class="circle">
+                        <span class="icon2"><i class="fa-solid fa-desktop"></i></span>
+                    </div>
+                </div>
+                <div class="circle1">
+                    <div class="circle">
+                        <span class="icon2"><i class="fa-solid fa-layer-group"></i></span>
+                    </div>
+                </div>
+                <div class="circle1">
+                    <div class="circle">
+                        <span class="icon2"><i class="fa-solid fa-camera"></i></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
